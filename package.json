@@ -1,0 +1,26 @@
+{
+  "name": "scrapifier",
+  "version": "1.0.0",
+  "description": "Scrapifier is a simple tool used to help scrap websites and assess any changes to its contents on a regular basis and alert a user once any are detected.",
+  "main": "driver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/targets/grades/driver.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^1.15.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soenAnt/Scrapifier.git"
+  }
+}
