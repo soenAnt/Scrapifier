@@ -70,12 +70,12 @@ async function run() {
       // might not actually correspond to the same term for everyone. This needs
       // to be refinedby selecting the adjacent columns value that identifies
       // the term by name (and not by index).
-      selectors.gradesTermSelectionPage.radioSelectTermIdNames.winter2018,
+      selectors.gradesTermSelectionPage.radioSelectTermIdNames.winter2019,
       selectors.gradesTermSelectionPage.buttonContinueIdName,
       selectors.gradesTableViewPage.gradeTableId,
     );
 
-    fs.writeFileSync('./grades.txt', gradeTable); // save the contents to file
+    fs.writeFileSync(`${__dirname}/grades.txt`, gradeTable); // save the contents to file
 
     await browser.close(); // close the browser instance
   } catch (e) {
